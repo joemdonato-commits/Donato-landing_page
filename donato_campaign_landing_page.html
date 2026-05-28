@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donato | We Fix Hiring Problems, Fast.</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Playfair Display (Serif for Headlines) & Inter (Sans-serif for UI/Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Elegant Minimalist Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            cream: '#FDFBF7', // Editorial Warm Cream background
+                            slate: '#0F172A', // Crisp Midnight Slate for text/primary elements
+                            bronze: '#B45309', // Warm refined bronze accent
+                            gold: '#D97706',
+                            muted: '#475569',
+                            card: '#FFFFFF',
+                            border: '#E2E8F0'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #0F172A;
+            -webkit-font-smoothing: antialiased;
+        }
+        /* Custom scrollbar to match premium aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FDFBF7;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #B45309;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-bronze selection:text-white">
+
+    <!-- -->
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-brand-cream/80 backdrop-blur-md border-b border-stone-200/60 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="https://donato.useai.in/" target="_blank" class="flex items-center space-x-3 group">
+                <span class="font-serif text-2xl font-bold tracking-tight text-brand-slate group-hover:text-brand-bronze transition-colors">
+                    DONATO<span class="text-brand-bronze">.</span>
+                </span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide uppercase text-brand-slate/80">
+                <a href="#the-cost" class="hover:text-brand-bronze transition-colors">The Cost of Delay</a>
+                <a href="#how-we-fix" class="hover:text-brand-bronze transition-colors">Our Standard</a>
+                <a href="#calculator" class="hover:text-brand-bronze transition-colors">ROI Calculator</a>
+                <a href="#candidates" class="hover:text-brand-bronze transition-colors">Ready Talent</a>
+            </nav>
+            <div>
+                <a href="#solve-hiring" class="inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold tracking-widest uppercase border border-brand-slate bg-brand-slate text-brand-cream hover:bg-brand-bronze hover:border-brand-bronze transition-all duration-300 rounded-none shadow-sm">
+                    Resolve Your Vacancies
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- -->
+    <!-- HERO SECTION (Ogilvy Typography Approach: Big, thought-provoking headline, plenty of whitespace, factual credibility) -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Heavy Copywriting & Immediate Value Proposition -->
+                <div class="lg:col-span-8 space-y-8">
+                    <div class="inline-flex items-center space-x-2 text-brand-bronze font-semibold uppercase tracking-widest text-xs">
+                        <span class="h-[1px] w-8 bg-brand-bronze"></span>
+                        <span>AN ADVERTISING INSIGHT FOR EXECUTIVE LEADERSHIP</span>
+                    </div>
+                    
+                    <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl text-brand-slate font-semibold leading-[1.1] tracking-tight">
+                        The average critical vacancy drains <span class="italic text-brand-bronze">momentum</span> every 24 hours. <br class="hidden sm:inline">Let’s resolve that.
+                    </h1>
+                    
+                    <p class="text-lg md:text-xl text-brand-muted font-light leading-relaxed max-w-2xl">
+                        We fix hiring problems. <span class="font-semibold text-brand-slate">Fast, reliable, and on point.</span> Whether you are an SMB or an enterprise steering through talent shortages, Donato connects your team with pre-vetted elite professionals immediately.
+                    </p>
+
+                    <!-- Trust Signatures / Badges Directly Below Hero Text for Maximum Initial Trust -->
+                    <div class="pt-4 border-t border-stone-200 grid grid-cols-3 gap-4 max-w-xl">
+                        <div class="flex items-start space-x-2">
+                            <span class="text-brand-bronze mt-1"><i class="fa-solid fa-award"></i></span>
+                            <div>
+                                <p class="text-xs font-bold text-brand-slate tracking-wide">ISO CERTIFIED</p>
+                                <p class="text-[10px] text-brand-muted">Globally validated quality</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-2">
+                            <span class="text-brand-bronze mt-1"><i class="fa-solid fa-handshake-angle"></i></span>
+                            <div>
+                                <p class="text-xs font-bold text-brand-slate tracking-wide">MBE CERTIFIED</p>
+                                <p class="text-[10px] text-brand-muted">Minority Business Ent.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-2">
+                            <span class="text-brand-bronze mt-1"><i class="fa-solid fa-gem"></i></span>
+                            <div>
+                                <p class="text-xs font-bold text-brand-slate tracking-wide">SBE CERTIFIED</p>
+                                <p class="text-[10px] text-brand-muted">Small Business Ent.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Call to Action Cluster -->
+                    <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center space-y-3 sm:space-y-0 sm:space-x-4">
+                        <a href="#solve-hiring" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold tracking-wider uppercase bg-brand-slate text-brand-cream hover:bg-brand-bronze transition-all duration-300 rounded-none text-center">
+                            Hire Without Delay <i class="fa-solid fa-arrow-right ml-3"></i>
+                        </a>
+                        <a href="#calculator" class="inline-flex items-center justify-center px-8 py-4 text-sm font-semibold tracking-wider uppercase border border-stone-300 hover:border-brand-slate text-brand-slate transition-all duration-300 rounded-none text-center bg-white/50">
+                            Calculate Vacancy Cost
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Clean, High-Contrast Editorial Stat Card -->
+                <div class="lg:col-span-4 lg:pl-4">
+                    <div class="bg-brand-slate text-brand-cream p-8 md:p-10 shadow-xl border border-brand-slate relative">
+                        <div class="absolute -top-3 -right-3 w-8 h-8 bg-brand-bronze flex items-center justify-center">
+                            <i class="fa-solid fa-quote-right text-xs text-brand-cream"></i>
+                        </div>
+                        <p class="font-serif italic text-xl text-stone-300 leading-relaxed mb-6">
+                            "934,000 vacant critical roles are costing SMBs and enterprises massive revenue losses. Over 10 hours a week are wasted on pure scheduling."
+                        </p>
+                        <div class="border-t border-stone-700 pt-6">
+                            <p class="text-3xl font-bold font-serif text-brand-bronze">43%</p>
+                            <p class="text-xs uppercase tracking-wider text-stone-400 mt-1 font-semibold">Average reduction in time-to-hire with rigorous branding and pipeline management</p>
+                        </div>
+                        <div class="mt-6 pt-6 border-t border-stone-700 flex items-center justify-between text-xs text-stone-400">
+                            <span>Analysis: IT, BFSI & Healthcare</span>
+                            <span class="font-bold text-white">2026 Forecast</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- -->
+    <!-- SUB-HERO CREDIBILITY SECTION (Why ISO, MBE & SBE Matter) -->
+    <section class="py-12 bg-white border-y border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+                <div class="max-w-md">
+                    <h3 class="font-serif text-2xl text-brand-slate font-semibold leading-snug">Quality, compliance and diversity are built directly into our pipeline.</h3>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 flex-1 max-w-3xl">
+                    <div class="p-4 border border-stone-100 rounded-none hover:border-stone-300 transition-colors">
+                        <div class="text-brand-bronze mb-2"><i class="fa-solid fa-circle-check text-xl"></i></div>
+                        <p class="text-sm font-bold text-brand-slate mb-1">ISO 9001:2015</p>
+                        <p class="text-xs text-brand-muted">Certified recruitment infrastructure, delivering consistency in high-demand fields.</p>
+                    </div>
+                    <div class="p-4 border border-stone-100 rounded-none hover:border-stone-300 transition-colors">
+                        <div class="text-brand-bronze mb-2"><i class="fa-solid fa-users-viewfinder text-xl"></i></div>
+                        <p class="text-sm font-bold text-brand-slate mb-1">MBE Certified</p>
+                        <p class="text-xs text-brand-muted">Promoting strategic diverse hiring practices that reflect real-world markets.</p>
+                    </div>
+                    <div class="p-4 border border-stone-100 rounded-none hover:border-stone-300 transition-colors">
+                        <div class="text-brand-bronze mb-2"><i class="fa-solid fa-building-circle-check text-xl"></i></div>
+                        <p class="text-sm font-bold text-brand-slate mb-1">SBE Certified</p>
+                        <p class="text-xs text-brand-muted">Nimble, dynamic operations engineered to bypass corporate bottlenecks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -->
+    <!-- SECTION 1: THE COST OF EMPTY CHAIRS (Addressing major pain points & emotional drivers) -->
+    <section id="the-cost" class="py-20 md:py-28">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <p class="text-xs font-semibold uppercase tracking-widest text-brand-bronze">The Cost of Vacuum</p>
+                <h2 class="font-serif text-3xl md:text-4xl text-brand-slate font-bold">Unfilled roles cost far more than recruiter fees.</h2>
+                <p class="text-brand-muted font-light">Every day a technical, financial, or clinical role sits empty, digital transformation slows, team morale dips, and clients feel the friction.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                <!-- Pain Point 1 -->
+                <div class="bg-white p-8 border border-stone-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-none bg-stone-100 flex items-center justify-center text-brand-slate mb-6">
+                            <i class="fa-solid fa-shield-halved text-lg text-brand-bronze"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-bold text-brand-slate mb-3">Acute Talent Shortages</h4>
+                        <p class="text-sm text-brand-muted leading-relaxed mb-6">
+                            7 out of 10 firms globally face crippling shortages in critical roles like cybersecurity and machine learning. You cannot afford a generalist agency that simply casts wide nets.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-brand-slate font-semibold">
+                        <span>THE BENCHMARK</span>
+                        <span class="text-brand-bronze">70% Firm Deficit</span>
+                    </div>
+                </div>
+
+                <!-- Pain Point 2 -->
+                <div class="bg-white p-8 border border-stone-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-none bg-stone-100 flex items-center justify-center text-brand-slate mb-6">
+                            <i class="fa-solid fa-hourglass-half text-lg text-brand-bronze"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-bold text-brand-slate mb-3">Scheduling and Admin Attrition</h4>
+                        <p class="text-sm text-brand-muted leading-relaxed mb-6">
+                            Decision makers spend upwards of 10 hours a week coordinate-scheduling, following up, and managing complex pipelines. Our certified frameworks optimize this entirely, cutting time-to-hire drastically.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-brand-slate font-semibold">
+                        <span>ADMINISTRATIVE LOSS</span>
+                        <span class="text-brand-bronze">10 hrs / week</span>
+                    </div>
+                </div>
+
+                <!-- Pain Point 3 -->
+                <div class="bg-white p-8 border border-stone-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-none bg-stone-100 flex items-center justify-center text-brand-slate mb-6">
+                            <i class="fa-solid fa-user-xmark text-lg text-brand-bronze"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-bold text-brand-slate mb-3">The Cost of Mis-hires</h4>
+                        <p class="text-sm text-brand-muted leading-relaxed mb-6">
+                            High turnover in tech, finance, and healthcare can cost 1.5x to 2x the base salary of the position in lost onboarding momentum and recruitment duplicate spend. Getting the exact-fit match counts.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-brand-slate font-semibold">
+                        <span>FINANCIAL DAMAGE</span>
+                        <span class="text-brand-bronze">1.5 - 2x Annual Salary</span>
+                    </div>
+                </div>
+
+                <!-- Pain Point 4 -->
+                <div class="bg-white p-8 border border-stone-200/80 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-none bg-stone-100 flex items-center justify-center text-brand-slate mb-6">
+                            <i class="fa-solid fa-brain text-lg text-brand-bronze"></i>
+                        </div>
+                        <h4 class="font-serif text-xl font-bold text-brand-slate mb-3">Niche Skills Bottleneck</h4>
+                        <p class="text-sm text-brand-muted leading-relaxed mb-6">
+                            Modern high-growth segments like Healthcare IT require narrow capabilities—such as generative AI infrastructure, deep regulatory compliance, and customized HL7 workflows.
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-stone-100 flex items-center justify-between text-xs text-brand-slate font-semibold">
+                        <span>GROWTH VERTICALS</span>
+                        <span class="text-brand-bronze">10%+ Staffing CAGR</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -->
+    <!-- INTERACTIVE SECTION: OPPORTUNITY COST & VACANCY CALCULATOR -->
+    <section id="calculator" class="py-20 bg-brand-slate text-brand-cream relative">
+        <div class="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:16px_16px] opacity-20"></div>
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left: Interactive Inputs -->
+                <div class="lg:col-span-5 space-y-6">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-brand-bronze">Interactive Cost Estimator</p>
+                    <h3 class="font-serif text-3xl md:text-4xl font-bold leading-tight">What is your current empty chair costing you?</h3>
+                    <p class="text-sm text-stone-300 font-light">
+                        Use this calculator to see estimated revenue impact, recruiting friction costs, and how much time Donato’s structured ISO certified team can save you this quarter.
+                    </p>
+
+                    <!-- Calculator inputs form -->
+                    <div class="space-y-4 pt-4">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-2">Number of Vacant Critical Roles</label>
+                            <div class="flex items-center space-x-3 bg-slate-900 border border-stone-700 px-4 py-3">
+                                <button type="button" onclick="adjustCount('vacancies', -1)" class="text-brand-bronze hover:text-white px-2 focus:outline-none"><i class="fa-solid fa-minus"></i></button>
+                                <input type="number" id="calc-vacancies" value="3" min="1" max="50" class="w-full text-center bg-transparent border-none text-white font-bold focus:ring-0 text-lg" readonly>
+                                <button type="button" onclick="adjustCount('vacancies', 1)" class="text-brand-bronze hover:text-white px-2 focus:outline-none"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-2">Estimated Annual Salary per Role ($)</label>
+                            <input type="range" id="calc-salary" min="50000" max="250000" step="5000" value="120000" oninput="calculateVacancyCost()" class="w-full accent-brand-bronze cursor-pointer">
+                            <div class="flex justify-between text-xs text-stone-400 mt-1">
+                                <span>$50,000</span>
+                                <span class="font-bold text-brand-bronze" id="calc-salary-display">$120,000</span>
+                                <span>$250,000</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-2">Average Days Position Sits Vacant</label>
+                            <input type="range" id="calc-days" min="15" max="120" step="5" value="60" oninput="calculateVacancyCost()" class="w-full accent-brand-bronze cursor-pointer">
+                            <div class="flex justify-between text-xs text-stone-400 mt-1">
+                                <span>15 Days</span>
+                                <span class="font-bold text-brand-bronze" id="calc-days-display">60 Days</span>
+                                <span>120 Days</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Visual Output Dashboard -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-900/60 border border-stone-700 p-8 md:p-12 relative">
+                        <div class="text-xs uppercase tracking-widest text-brand-bronze font-bold mb-6 flex items-center">
+                            <span class="inline-block w-2.5 h-2.5 bg-red-600 rounded-full mr-2 animate-pulse"></span>
+                            Estimated Vacuum Impact Assessment
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8 border-b border-stone-800 pb-8">
+                            <div>
+                                <p class="text-xs text-stone-400 uppercase tracking-wide">Calculated Opportunity Cost</p>
+                                <p class="text-3xl md:text-4xl font-serif font-bold text-red-500 mt-2" id="calc-lost-revenue">$0</p>
+                                <p class="text-[11px] text-stone-400 mt-1">Based on standard industry loss multipliers (1.4x of daily productivity rate).</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-stone-400 uppercase tracking-wide">Recruiting Coordination Cost</p>
+                                <p class="text-3xl md:text-4xl font-serif font-bold text-amber-500 mt-2" id="calc-scheduling-lost">$0</p>
+                                <p class="text-[11px] text-stone-400 mt-1">Estimating 10 hours of premium scheduling waste per week.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+                            <div>
+                                <p class="text-xs uppercase text-brand-bronze font-bold tracking-wider">Donato Fast-Track Solution</p>
+                                <p class="text-xl font-serif text-emerald-400 font-bold mt-1">Save up to <span id="calc-potential-savings">$0</span> & 43% Time</p>
+                            </div>
+                            <div>
+                                <a href="#solve-hiring" class="inline-block text-center px-6 py-3 bg-brand-bronze hover:bg-amber-600 text-brand-cream text-xs font-semibold uppercase tracking-widest transition-all duration-300 rounded-none w-full sm:w-auto">
+                                    Recover Lost Ground
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- -->
+    <!-- SECTION 2: CANDIDATE CAROUSEL / HIGHLIGHT (Proof of immediate capacity) -->
+    <section id="candidates" class="py-20 bg-brand-cream">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div class="space-y-3">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-brand-bronze">Immediate Placement Opportunities</p>
+                    <h2 class="font-serif text-3xl md:text-4xl text-brand-slate font-bold">Elite pre-vetted candidates, ready today.</h2>
+                    <p class="text-brand-muted max-w-xl text-sm font-light">Our highly responsive recruiting infrastructure maintains active relationships with stellar professionals who can integrate instantly.</p>
+                </div>
+                <div class="mt-6 md:mt-0 flex space-x-2">
+                    <button onclick="filterCandidates('all')" id="btn-cat-all" class="px-4 py-2 text-xs font-semibold tracking-wide uppercase border border-brand-slate bg-brand-slate text-brand-cream transition-all duration-300">All Sectors</button>
+                    <button onclick="filterCandidates('tech')" id="btn-cat-tech" class="px-4 py-2 text-xs font-semibold tracking-wide uppercase border border-stone-300 bg-white text-brand-slate hover:border-brand-slate transition-all duration-300">Tech & AI</button>
+                    <button onclick="filterCandidates('bfsi')" id="btn-cat-bfsi" class="px-4 py-2 text-xs font-semibold tracking-wide uppercase border border-stone-300 bg-white text-brand-slate hover:border-brand-slate transition-all duration-300">BFSI</button>
+                    <button onclick="filterCandidates('healthcare')" id="btn-cat-healthcare" class="px-4 py-2 text-xs font-semibold tracking-wide uppercase border border-stone-300 bg-white text-brand-slate hover:border-brand-slate transition-all duration-300">Healthcare IT</button>
+                </div>
+            </div>
+
+            <!-- Candidates Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="candidates-container">
+                <!-- Candidate 1: Tech -->
+                <div class="candidate-card bg-white border border-stone-200 p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-300" data-category="tech">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs uppercase font-semibold text-brand-bronze bg-stone-100 px-2.5 py-1">Tech / AI Focus</span>
+                            <span class="text-xs text-emerald-600 font-semibold"><span class="inline-block w-2 h-2 bg-emerald-500 rounded-full mr-1.5 animate-pulse"></span>Pre-vetted</span>
+                        </div>
+                        <h4 class="font-serif text-lg font-bold text-brand-slate">Senior Generative AI & ML Architect</h4>
+                        <p class="text-xs text-brand-muted mt-1">San Francisco, CA (or Remote) | 8+ Years Exp.</p>
+                        
+                        <div class="mt-4 space-y-2 border-t border-stone-100 pt-4">
+                            <p class="text-xs text-brand-slate leading-relaxed"><strong class="font-semibold text-brand-bronze">Expertise:</strong> LLM fine-tuning, PyTorch, LangChain, High-Throughput Infrastructure.</p>
+                            <p class="text-xs text-brand-muted leading-relaxed"><strong class="font-semibold text-brand-slate">Last Win:</strong> Led a GenAI platform restructure for a fintech platform, cutting operational model costs by 32% and increasing pipeline speed.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-stone-100">
+                        <a href="#solve-hiring" onclick="selectCandidate('Senior GenAI Architect')" class="inline-flex items-center text-xs font-bold text-brand-slate hover:text-brand-bronze transition-colors">
+                            Request Interview & Shortlist <i class="fa-solid fa-chevron-right ml-2 text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Candidate 2: BFSI -->
+                <div class="candidate-card bg-white border border-stone-200 p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-300" data-category="bfsi">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs uppercase font-semibold text-brand-bronze bg-stone-100 px-2.5 py-1 font-sans">BFSI Core</span>
+                            <span class="text-xs text-emerald-600 font-semibold"><span class="inline-block w-2 h-2 bg-emerald-500 rounded-full mr-1.5 animate-pulse"></span>Pre-vetted</span>
+                        </div>
+                        <h4 class="font-serif text-lg font-bold text-brand-slate">Director of Quantitative Risk & Modeling</h4>
+                        <p class="text-xs text-brand-muted mt-1">New York Metro (Hybrid) | 12+ Years Exp.</p>
+                        
+                        <div class="mt-4 space-y-2 border-t border-stone-100 pt-4">
+                            <p class="text-xs text-brand-slate leading-relaxed"><strong class="font-semibold text-brand-bronze">Expertise:</strong> Quantitative compliance, risk profiling, predictive model validation, SQL, SAS, R.</p>
+                            <p class="text-xs text-brand-muted leading-relaxed"><strong class="font-semibold text-brand-slate">Last Win:</strong> Deployed machine learning predictive risk workflows for mid-market asset manager, cutting compliance gaps entirely.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-stone-100">
+                        <a href="#solve-hiring" onclick="selectCandidate('Director of Quantitative Risk')" class="inline-flex items-center text-xs font-bold text-brand-slate hover:text-brand-bronze transition-colors">
+                            Request Interview & Shortlist <i class="fa-solid fa-chevron-right ml-2 text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Candidate 3: Healthcare -->
+                <div class="candidate-card bg-white border border-stone-200 p-6 flex flex-col justify-between hover:shadow-md transition-shadow duration-300" data-category="healthcare">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs uppercase font-semibold text-brand-bronze bg-stone-100 px-2.5 py-1">Healthcare IT</span>
+                            <span class="text-xs text-emerald-600 font-semibold"><span class="inline-block w-2 h-2 bg-emerald-500 rounded-full mr-1.5 animate-pulse"></span>Pre-vetted</span>
+                        </div>
+                        <h4 class="font-serif text-lg font-bold text-brand-slate">Senior Clinical Interoperability Lead</h4>
+                        <p class="text-xs text-brand-muted mt-1">Boston, MA (or Remote) | 10+ Years Exp.</p>
+                        
+                        <div class="mt-4 space-y-2 border-t border-stone-100 pt-4">
+                            <p class="text-xs text-brand-slate leading-relaxed"><strong class="font-semibold text-brand-bronze">Expertise:</strong> HL7 FHIR integrations, EHR custom migrations (Epic/Cerner), medical privacy compliance.</p>
+                            <p class="text-xs text-brand-muted leading-relaxed"><strong class="font-semibold text-brand-slate">Last Win:</strong> Unified legacy multi-clinic patient portal system, cutting patient wait processing times by 20% across 14 points.</p>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-stone-100">
+                        <a href="#solve-hiring" onclick="selectCandidate('Senior Clinical Interoperability Lead')" class="inline-flex items-center text-xs font-bold text-brand-slate hover:text-brand-bronze transition-colors">
+                            Request Interview & Shortlist <i class="fa-solid fa-chevron-right ml-2 text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -->
+    <!-- SECTION 3: HOW WE FIX HIRING (Our Standard & Methodology) -->
+    <section id="how-we-fix" class="py-20 md:py-28 bg-white border-y border-stone-200/80">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-center">
+                
+                <!-- Left: Big Bold Copy block -->
+                <div class="lg:col-span-5 space-y-6">
+                    <p class="text-xs font-semibold uppercase tracking-widest text-brand-bronze">A Structured Philosophy</p>
+                    <h2 class="font-serif text-3xl md:text-4xl text-brand-slate font-bold leading-[1.15]">"We don't deliver resumes. We deliver fully-curated options."</h2>
+                    <p class="text-brand-muted leading-relaxed font-light">
+                        David Ogilvy famously believed in selling reality over hyperbole. We don't flood your inbox with raw databases. We run a certified process to deliver precisely calibrated fits, reducing interview fatigue.
+                    </p>
+                    <div class="space-y-4 pt-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-5 h-5 bg-brand-bronze text-white flex items-center justify-center rounded-none text-[10px]"><i class="fa-solid fa-check"></i></div>
+                            <span class="text-sm font-semibold text-brand-slate">Rigid ISO 9001:2015-level quality mapping</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-5 h-5 bg-brand-bronze text-white flex items-center justify-center rounded-none text-[10px]"><i class="fa-solid fa-check"></i></div>
+                            <span class="text-sm font-semibold text-brand-slate">MBE & SBE compliant sourcing models</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-5 h-5 bg-brand-bronze text-white flex items-center justify-center rounded-none text-[10px]"><i class="fa-solid fa-check"></i></div>
+                            <span class="text-sm font-semibold text-brand-slate">Immediate tech and high-growth segment benches</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Chronological Speed Execution Pipeline -->
+                <div class="lg:col-span-7 lg:pl-8 space-y-8 relative">
+                    <!-- Line trace for steps -->
+                    <div class="absolute left-6 top-8 bottom-8 w-[1px] bg-stone-200 hidden sm:block"></div>
+
+                    <!-- Step 1 -->
+                    <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6 relative">
+                        <div class="w-12 h-12 bg-brand-slate text-brand-cream flex items-center justify-center font-serif text-lg font-bold z-10 shrink-0">
+                            01
+                        </div>
+                        <div class="space-y-1">
+                            <h4 class="font-serif text-lg font-bold text-brand-slate">Strategic Diagnostics (Day 1)</h4>
+                            <p class="text-sm text-brand-muted leading-relaxed">
+                                We dissect the functional reality of your vacancy—mapping cultural parameters, technical standards, and reporting demands. No loose parameters.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6 relative">
+                        <div class="w-12 h-12 bg-brand-slate text-brand-cream flex items-center justify-center font-serif text-lg font-bold z-10 shrink-0">
+                            02
+                        </div>
+                        <div class="space-y-1">
+                            <h4 class="font-serif text-lg font-bold text-brand-slate">Vetting and Multi-Layer Assessment (Day 2-3)</h4>
+                            <p class="text-sm text-brand-muted leading-relaxed">
+                                We cross-reference the requirement with our certified talent network, conducting behavioral profiles, performance reviews, and strict reference audits.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex flex-col sm:flex-row items-start space-y-4 sm:space-y-0 sm:space-x-6 relative">
+                        <div class="w-12 h-12 bg-brand-bronze text-brand-cream flex items-center justify-center font-serif text-lg font-bold z-10 shrink-0">
+                            03
+                        </div>
+                        <div class="space-y-1">
+                            <h4 class="font-serif text-lg font-bold text-brand-slate text-brand-bronze">The Shortlist Delivered (Day 4)</h4>
+                            <p class="text-sm text-brand-muted leading-relaxed">
+                                You receive 2 to 3 absolute matches. We handle immediate, friction-free coordinate scheduling, saving your team hours of management load.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- -->
+    <!-- SECTION 4: REAL PROOF (Case Studies & Narrative Testimonials) -->
+    <section class="py-20 md:py-28 bg-brand-cream">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <p class="text-xs font-semibold uppercase tracking-widest text-brand-bronze">Verifiable Outcomes</p>
+                <h2 class="font-serif text-3xl md:text-4xl text-brand-slate font-bold">How we solved complex hiring challenges</h2>
+                <p class="text-brand-muted font-light">Direct case studies that highlight our speed, precision, and reliable placements.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Case Study 1 -->
+                <div class="space-y-6">
+                    <div class="border-l-4 border-brand-bronze pl-6 space-y-2">
+                        <p class="text-xs uppercase tracking-widest text-brand-muted font-bold">CASE STUDY 01: BFSI ADVANTAGE</p>
+                        <h4 class="font-serif text-2xl text-brand-slate font-bold">Resolving 12 Senior Risk Openings in 30 Days</h4>
+                    </div>
+                    <p class="text-sm text-brand-muted leading-relaxed font-light">
+                        A major regional financial services institution was stalling on digital compliance audits due to a 3-month backlog of quantitative analyst vacancies. 
+                    </p>
+                    <div class="bg-white p-6 border border-stone-200">
+                        <p class="text-xs text-brand-slate italic leading-relaxed">
+                            "Donato's executive team delivered a curated shortlist of pre-vetted analysts within 72 hours. We eliminated our talent backlog completely and streamlined risk assessments ahead of schedule."
+                        </p>
+                        <p class="text-xs font-bold text-brand-slate mt-4 uppercase tracking-wider">— Chief Compliance Officer, BFSI Group</p>
+                    </div>
+                </div>
+
+                <!-- Case Study 2 -->
+                <div class="space-y-6">
+                    <div class="border-l-4 border-brand-bronze pl-6 space-y-2">
+                        <p class="text-xs uppercase tracking-widest text-brand-muted font-bold">CASE STUDY 02: HIGH-GROWTH TECH</p>
+                        <h4 class="font-serif text-2xl text-brand-slate font-bold">Filling Generative AI Shortage Under Tight Timelines</h4>
+                    </div>
+                    <p class="text-sm text-brand-muted leading-relaxed font-light">
+                        A high-growth Healthcare IT firm faced an acute shortage of developers capable of building LLM workflows for sensitive medical records.
+                    </p>
+                    <div class="bg-white p-6 border border-stone-200">
+                        <p class="text-xs text-brand-slate italic leading-relaxed">
+                            "We had spent 6 weeks sorting through hundreds of unqualified resumes. Donato stepped in with their SBE-compliant specialized pipeline. In 5 days, we had fully onboarded two top-tier engineers."
+                        </p>
+                        <p class="text-xs font-bold text-brand-slate mt-4 uppercase tracking-wider">— Director of Engineering, HealthIT Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -->
+    <!-- SECTION 5: FINAL CALL TO ACTION & FORM (The ultimate conversion zone) -->
+    <section id="solve-hiring" class="py-20 md:py-28 bg-brand-slate text-brand-cream relative">
+        <div class="absolute inset-0 bg-[radial-gradient(#1e293b_1px,transparent_1px)] [background-size:16px_16px] opacity-20"></div>
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-4">
+                <p class="text-xs font-semibold uppercase tracking-widest text-brand-bronze">Take Immediate Action</p>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold">Let us handle the hunt, so you can focus on growth.</h2>
+                <p class="text-stone-300 font-light text-sm">
+                    Fill out our streamlined brief below. Our certified staffing teams will reach out within 2 business hours to schedule a tactical overview.
+                </p>
+            </div>
+
+            <!-- Conversion Form -->
+            <div class="bg-slate-900 border border-stone-800 p-8 md:p-12 shadow-2xl">
+                <form id="hiring-campaign-form" onsubmit="handleHiringSubmit(event)" class="space-y-6">
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="form-name" class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-2">Your Name</label>
+                            <input type="text" id="form-name" required class="w-full bg-slate-950 border border-stone-700 focus:border-brand-bronze focus:ring-1 focus:ring-brand-bronze text-white px-4 py-3 text-sm rounded-none focus:outline-none transition-colors" placeholder="e.g., Sarah Jenkins">
+                        </div>
+                        <div>
+                            <label for="form-title" class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-2">Corporate Title</label>
+                            <input type="text" id="form-title" required class="w-full bg-slate-950 border border-stone-700 focus:border-brand-bronze focus:ring-1 focus:ring-brand-bronze text-white px-4 py-3 text-sm rounded-none focus:outline-none transition-colors" placeholder="e.g., Director of HR / VP of Ops">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="form-email" class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-2">Corporate Email</label>
+                            <input type="email" id="form-email" required class="w-full bg-slate-950 border border-stone-700 focus:border-brand-bronze focus:ring-1 focus:ring-brand-bronze text-white px-4 py-3 text-sm rounded-none focus:outline-none transition-colors" placeholder="e.g., sjenkins@enterprise.com">
+                        </div>
+                        <div>
+                            <label for="form-phone" class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-2">Direct Phone</label>
+                            <input type="tel" id="form-phone" class="w-full bg-slate-950 border border-stone-700 focus:border-brand-bronze focus:ring-1 focus:ring-brand-bronze text-white px-4 py-3 text-sm rounded-none focus:outline-none transition-colors" placeholder="e.g., (555) 123-4567">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="form-sector" class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-2">Industry Sector</label>
+                            <select id="form-sector" class="w-full bg-slate-950 border border-stone-700 focus:border-brand-bronze focus:ring-1 focus:ring-brand-bronze text-white px-4 py-3 text-sm rounded-none focus:outline-none transition-colors">
+                                <option value="technology">Technology & Telecom</option>
+                                <option value="bfsi">BFSI & Corporate Finance</option>
+                                <option value="healthcare">Healthcare IT / Medicine</option>
+                                <option value="manufacturing">Manufacturing & Logistics</option>
+                                <option value="other">Other High-Growth Sector</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="form-candidate-interest" class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-2">Candidate Focus / Request</label>
+                            <input type="text" id="form-candidate-interest" class="w-full bg-slate-950 border border-stone-700 focus:border-brand-bronze focus:ring-1 focus:ring-brand-bronze text-white px-4 py-3 text-sm rounded-none focus:outline-none transition-colors" placeholder="e.g., Senior AI Architect, Security Team, or General Query">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="form-message" class="block text-xs uppercase tracking-wider font-semibold text-stone-300 mb-2">Tell us about your target staffing needs or timeline</label>
+                        <textarea id="form-message" rows="4" class="w-full bg-slate-950 border border-stone-700 focus:border-brand-bronze focus:ring-1 focus:ring-brand-bronze text-white px-4 py-3 text-sm rounded-none focus:outline-none transition-colors" placeholder="Provide a brief context (e.g., We have 3 critical developer vacancies and spent 15 hours scheduling interviews...)"></textarea>
+                    </div>
+
+                    <div class="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
+                        <div class="flex items-center space-x-2 text-xs text-stone-400">
+                            <span class="text-brand-bronze"><i class="fa-solid fa-lock"></i></span>
+                            <span>Strict Confidentiality. 100% Secure & Compliant.</span>
+                        </div>
+                        <button type="submit" class="inline-flex items-center justify-center px-8 py-4 bg-brand-bronze hover:bg-amber-600 text-brand-cream text-xs font-semibold tracking-widest uppercase transition-all duration-300 rounded-none w-full sm:w-auto shadow-lg">
+                            Request Shortlist Within 48 Hours
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Status Feedback Message -->
+                <div id="form-feedback" class="hidden mt-6 p-4 bg-emerald-950/60 border border-emerald-500/30 text-emerald-300 text-sm">
+                    <p class="font-bold flex items-center mb-1">
+                        <span class="mr-2"><i class="fa-regular fa-circle-check"></i></span>
+                        Diagnostic Request Received Successfully.
+                    </p>
+                    <p class="font-light">Our recruitment Director is assessing your sector profiles. We will initiate contact within 2 business hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -->
+    <!-- FOOTER -->
+    <footer class="bg-brand-cream border-t border-stone-200/80 py-12 text-xs text-brand-muted">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="space-y-4">
+                    <p class="font-serif text-lg font-bold text-brand-slate">DONATO<span class="text-brand-bronze">.</span></p>
+                    <p class="leading-relaxed font-light">
+                        Certified MBE (Minority Business Enterprise), SBE (Small Business Enterprise) and ISO 9001:2015 Recruitment Organization. Providing premium placement engineering for SMBs and enterprise clients globally.
+                    </p>
+                </div>
+                <div>
+                    <p class="font-bold text-brand-slate uppercase tracking-wider mb-3">Our Core Verticals</p>
+                    <ul class="space-y-2 font-light">
+                        <li><a href="https://donato.useai.in/" target="_blank" class="hover:underline">Technology & Telecom (25%)</a></li>
+                        <li><a href="https://donato.useai.in/" target="_blank" class="hover:underline">BFSI Core (24%)</a></li>
+                        <li><a href="https://donato.useai.in/" target="_blank" class="hover:underline">Healthcare IT (10% CAGR)</a></li>
+                        <li><a href="https://donato.useai.in/" target="_blank" class="hover:underline">Manufacturing Operations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-brand-slate uppercase tracking-wider mb-3">Trust Certification Keys</p>
+                    <ul class="space-y-2 font-light">
+                        <li><span class="text-brand-slate font-medium">ISO 9001:2015</span> - Cert. 4880-Q</li>
+                        <li><span class="text-brand-slate font-medium">MBE Status</span> - ID #MB7204-2026</li>
+                        <li><span class="text-brand-slate font-medium">SBE Status</span> - Qualified SMB</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="font-bold text-brand-slate uppercase tracking-wider mb-3">Contact & Links</p>
+                    <ul class="space-y-2 font-light">
+                        <li>Official: <a href="https://donato.useai.in/" target="_blank" class="text-brand-bronze hover:underline font-medium">donato.useai.in</a></li>
+                        <li>Ad Campaign Reference: <span class="font-mono bg-stone-100 px-1 text-[10px] text-brand-slate">DONATO-H2-2026</span></li>
+                        <li class="pt-2 flex space-x-4 text-sm text-brand-slate">
+                            <a href="#" class="hover:text-brand-bronze"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#" class="hover:text-brand-bronze"><i class="fa-brands fa-x-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-stone-200/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>&copy; 2026 Donato Recruitment Operations. All rights reserved. Built with pride under quality standard frameworks.</p>
+                <div class="flex space-x-4">
+                    <a href="https://donato.useai.in/" target="_blank" class="hover:underline">Privacy Policy</a>
+                    <a href="https://donato.useai.in/" target="_blank" class="hover:underline">Terms of Services</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- -->
+    <!-- INTERACTIVE SCRIPTS -->
+    <script>
+        // Adjust vacancies count in Calculator
+        function adjustCount(id, delta) {
+            const input = document.getElementById('calc-vacancies');
+            let val = parseInt(input.value) + delta;
+            if (val < 1) val = 1;
+            if (val > 50) val = 50;
+            input.value = val;
+            calculateVacancyCost();
+        }
+
+        // ROI Opportunity Cost Calculation Logic
+        function calculateVacancyCost() {
+            const vacancies = parseInt(document.getElementById('calc-vacancies').value);
+            const salary = parseInt(document.getElementById('calc-salary').value);
+            const days = parseInt(document.getElementById('calc-days').value);
+
+            // Update range labels
+            document.getElementById('calc-salary-display').innerText = '$' + salary.toLocaleString();
+            document.getElementById('calc-days-display').innerText = days + ' Days';
+
+            // Calculate daily salary rate
+            const dailyRate = salary / 260; // 260 working days/yr
+            // Productivity multiplier is typically 1.4x the daily salary rate for a key technical/business role
+            const productvityLossPerDay = dailyRate * 1.4;
+
+            // Total opportunity cost
+            const totalLostRevenue = Math.round(vacancies * productvityLossPerDay * days);
+
+            // Scheduling waste cost: Assuming managers spend 10 hours/week scheduling ($60/hr rate)
+            // 10 hours/week is 2 hours per working day. 
+            const schedulingDailyLoss = (10 / 5) * 60; // hours * rate
+            const totalSchedulingLost = Math.round(vacancies * schedulingDailyLoss * days);
+
+            // Donato Potential Savings (Estimated 43% faster timeline + optimization yield)
+            const potentialSavings = Math.round((totalLostRevenue + totalSchedulingLost) * 0.43);
+
+            // Render Output values with professional formatting
+            document.getElementById('calc-lost-revenue').innerText = '$' + totalLostRevenue.toLocaleString();
+            document.getElementById('calc-scheduling-lost').innerText = '$' + totalSchedulingLost.toLocaleString();
+            document.getElementById('calc-potential-savings').innerText = '$' + potentialSavings.toLocaleString();
+        }
+
+        // Interactive Candidate Category Filter
+        function filterCandidates(category) {
+            // Update filter buttons style
+            const categories = ['all', 'tech', 'bfsi', 'healthcare'];
+            categories.forEach(cat => {
+                const btn = document.getElementById('btn-cat-' + cat);
+                if (cat === category) {
+                    btn.className = "px-4 py-2 text-xs font-semibold tracking-wide uppercase border border-brand-slate bg-brand-slate text-brand-cream transition-all duration-300";
+                } else {
+                    btn.className = "px-4 py-2 text-xs font-semibold tracking-wide uppercase border border-stone-300 bg-white text-brand-slate hover:border-brand-slate transition-all duration-300";
+                }
+            });
+
+            // Filter cards
+            const cards = document.querySelectorAll('.candidate-card');
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Autocomplete search focus field when candidate selected
+        function selectCandidate(candidateTitle) {
+            const field = document.getElementById('form-candidate-interest');
+            field.value = "Shortlist Inquiry: " + candidateTitle;
+            
+            // Highlight field briefly to confirm response
+            field.focus();
+            field.classList.add('ring-2', 'ring-brand-bronze');
+            setTimeout(() => {
+                field.classList.remove('ring-2', 'ring-brand-bronze');
+            }, 1500);
+        }
+
+        // Form submission Simulation
+        function handleHiringSubmit(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('form-name').value;
+            const email = document.getElementById('form-email').value;
+            
+            // Simulate API transmission
+            const submitBtn = e.target.querySelector('button[type="submit"]');
+            submitBtn.disabled = true;
+            submitBtn.innerText = "Transmitting Brief...";
+
+            setTimeout(() => {
+                submitBtn.innerText = "Request Shortlist Within 48 Hours";
+                submitBtn.disabled = false;
+                
+                // Show success feedback
+                const feedback = document.getElementById('form-feedback');
+                feedback.classList.remove('hidden');
+                
+                // Reset fields
+                document.getElementById('hiring-campaign-form').reset();
+                
+                // Scroll to feedback message smoothly
+                feedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 1200);
+        }
+
+        // Initialize values on document load
+        window.onload = function() {
+            calculateVacancyCost();
+        };
+    </script>
+</body>
+</html>
